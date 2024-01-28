@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Registration form</title>
+</head>
+<body>
+    <header>
+        <h1>Registration form</h1>
+    </header>
+    <div class="container" id="container">
+        <div class="myform">
+            <form action="#">
+
+                <div class="form-grp">
+                    <label for="username">Username</label>
+                    <input type="text" name="Username" id="username"  autocomplete="off"  oninput="validateusername()">
+                </div>
+
+                <div class="error" id="error_in_username"></div>
+                
+                <div class="form-grp">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" autocomplete="off" oninput="validateEmail()">
+                </div>
+                
+                <div class="error" id="error_in_email"></div>
+                
+                <div class="form-grp">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="number" name="phone_number" id="phone_number" autocomplete="off" oninput="validatePhonenumber()">
+                </div>
+                
+                <div class="error" id="error_in_phone_number"></div>
+                
+                <div class="form-grp">
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password" autocomplete="off" oninput="validatePassword()">
+                </div>
+                
+                <div class="error" id="error_in_password"></div>
+                
+                <div class="form-grp">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="text" name="confirm_password" id="confirm_password" autocomplete="off" oninput="validateConfirmPassword()">
+                </div>
+                
+                <div class="error" id="error_in_confirm_password"> </div>
+
+                <div>
+                    <button value="Submit" class="btn" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="view-users" id="view-users">
+        <button value="view" class="my-btn" id="view">View Registered Users</button>
+    </div>
+    <div class="userDetails" id="userDetails"> 
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
