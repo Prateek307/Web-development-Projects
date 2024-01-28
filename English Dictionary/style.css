@@ -1,0 +1,108 @@
+:root
+{
+    --backColor:#008080;
+    --textColor:white;
+    /* --bordRadius:10px; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header
+{
+    margin-bottom: 50px;
+}
+nav
+{
+    background-color: var(--backColor);
+    color: var(--textColor);
+    padding: 10px 10px;
+    width: 100vw;
+    font-size: 40px;
+    text-align: center;
+    /* to prevent the user from selecting the text */
+    user-select: none;
+}
+main
+{
+    min-height: 69vh;
+    max-width: 800px;
+    margin: 0 auto;
+}
+main form
+{
+    display: flex;
+    justify-content: center;
+}
+form input[type="text"] , button[type="submit"] 
+{
+    padding: 7px 7px;
+    border-radius:5px;
+    border: none;
+    font-size: 16px;
+}
+form input[type="text"]
+{
+    flex-grow: 1;
+    margin-right: 5px;
+} 
+form button[type="submit"]
+{
+    background-color: var(--backColor);
+    color: var(--textColor);
+}
+form button[type="submit"]:hover
+{
+    background-color: var(--backColor);
+    color: var(--textColor);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+footer
+{
+    /* to prevent the user from selecting the text */
+    user-select: none;
+    background-color: var(--backColor);
+    color: var(--textColor);
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+}
+.result p
+{
+    padding: 3px 3px;
+}
+.result
+{
+    margin-top: 20px;
+}
+.result a
+{
+    text-decoration: none;
+    background-color: var(--backColor);
+    color: var(--textColor);
+    padding: 7px 7px;
+    margin-left: 0px;
+    border-radius:5px;
+    border: none;
+    font-size: 16px;
+}
+@media screen and (max-width:320px)
+{
+    main form 
+    {
+        flex-direction: column;
+    }    
+    form button[type="submit"]
+    {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
