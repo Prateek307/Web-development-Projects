@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header
+{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #008080;
+    color: white;
+    padding: 10px 10px;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    margin: 25px auto;
+    max-width: 500px;
+    border-radius: 15px;
+}
+.myform
+{
+    margin-block: 20px;
+}
+.myform form input
+{
+    width: 100%;  
+    padding: 6px;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+}
+.form-grp
+{
+    margin: 2px;
+    width: 100%;
+    font-size: 15px;
+}
+.error
+{
+    width: 100%;
+    font-size: 14px;
+    color: red;
+    margin-bottom: 12px ;
+}
+.valid
+{
+    border: 2px solid green;
+}
+.invalid
+{
+    border: 2px solid red;
+}
+.btn
+{
+    background-color: #008080;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-top: 10px;
+}
+.btn:hover
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.my-btn
+{
+    background-color: #008080;
+    color: white;
+    font-size: 16px;
+    width: 25%;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-top: 10px;
+}
+.my-btn:hover
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.view-users
+{
+    text-align: center;
+}
+.hide {
+    display: none;
+}
